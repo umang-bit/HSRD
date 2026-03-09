@@ -1,0 +1,37 @@
+==========================================
+SLURM_JOB_ID = 2586672
+SLURM_NODELIST = gnode106
+SLURM_JOB_GPUS = 0,1,2
+==========================================
+========================================
+PhysDrive STMap Generation Pipeline
+Node: gnode106
+GPUs: 3
+Start: Sat Mar  7 12:15:28 PM IST 2026
+========================================
+
+===== STEP 1: Landmark Detection (3 GPUs parallel) =====
+Start: Sat Mar  7 12:15:29 PM IST 2026
+  Started worker 0 on GPU 0 (PID 3905002)
+  Started worker 1 on GPU 1 (PID 3905003)
+  Started worker 2 on GPU 2 (PID 3905004)
+Step 1 finished: Sat Mar  7 08:42:04 PM IST 2026
+
+===== STEP 2: Face Alignment (3 workers parallel) =====
+Start: Sat Mar  7 08:42:04 PM IST 2026
+  Started worker 0 (PID 3962651)
+  Started worker 1 (PID 3962652)
+  Started worker 2 (PID 3962653)
+Step 2 finished: Sat Mar  7 10:23:34 PM IST 2026
+
+===== STEP 3: STMap Generation (3 workers parallel) =====
+Start: Sat Mar  7 10:23:34 PM IST 2026
+  Started worker 0 (PID 3977396)
+  Started worker 1 (PID 3977397)
+  Started worker 2 (PID 3977398)
+Step 3 finished: Sat Mar  7 10:42:46 PM IST 2026
+
+========================================
+STMap pipeline finished
+End: Sat Mar  7 10:42:46 PM IST 2026
+========================================
